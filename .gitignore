@@ -1,0 +1,28 @@
+# Virtual environment
+vehicle/
+venv/
+.venv/
+
+# Secrets
+.env
+
+# Python cache / build files
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Pipeline outputs
+artifact/
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+notebook/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
