@@ -48,8 +48,8 @@ class Proj1Data:
             print("Fetching data from mongoDB")
             df = pd.DataFrame(list(collection.find()))
             print(f"Data fecthed with len: {len(df)}")
-            if "id" in df.columns.to_list():
-                df = df.drop(columns=["id"])
+            # Drop the dataset's own "id"; MongoDB's "_id" is kept and removed later in data transformation (schema drop_columns)
+            df = df.drop(columns=["id"], errors="ignore")
             df.replace({"na":np.nan},inplace=True)
             return df
 
