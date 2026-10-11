@@ -96,7 +96,7 @@ def save_object(file_path: str, obj: object) -> None:
 #     logging.info("Entered drop_columns methon of utils")
 
 #     try:
-#         df = df.drop(columns=cols, axis=1)
+#         df = df.drop(columns=cols)
 
 #         logging.info("Exited the drop_columns method of utils")
         
